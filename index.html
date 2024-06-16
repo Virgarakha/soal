@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Soal pemrograman</title>
+</head>
+<body>
+  <form id="soal">
+    <p>1.Kepanjangan Html adalah?..</p> 
+    <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>2.apa perbedaan semantic html dan non-semantic html?</p>
+    <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>3.Sebutkan macam-macam variabel java</p>
+    <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>4.berikan contoh non-semantic html</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>5.Jelaskan dan urutkan Struktur paling umum html?</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>6.buatkan codingan home screen web sederhana menggunakan tailwind css</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>7.Buatkan code program sederhana menggunakan operator tersery</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>8.buatkan codingan program darkmode menggunakan javaScript</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>9.Buatkan codingan landing page sederhana menggunakan bootstrap</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+    <p>10.Buatlah sebuah web responsif menggunakan mediaquery</p>
+     <input type="text" id="jawaban" name="jawaban" placeholder="isi disini">
+  </div>
+  <form id="jawab">
+    <p>Note, label jawaban salin lalu kirim melalui tombol button. untuk codingan dapaat berbentuk file</p>
+     <button type="submit">Kirim Jawaban</button>
+  </form>
+  <script>
+    document.getElementById('jawab').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            var nomorWhatsApp = '6285733456535$'; 
+            
+            var url = `https://api.whatsapp.com/send/?phone=6285733456535&text&type=phone_number&app_absent=0${nomorWhatsApp}?text=${encodeURIComponent(jawaban)}`;
+
+            window.open(url, '_blank');
+        });
+    
+  </script>
+</body>
+</html>
